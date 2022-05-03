@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 1rem;
+}
+.container h1 {
+  margin-top: 2rem;
+}
+.container img {
+  display: inline;
+  height: 4rem;
+}
+.container section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  margin: 0.6rem;
+  padding: 0 0.6rem;
+}
+.container section h2 {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+.container section h4 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.container section .btn-rounded {
+  padding: 0.4rem;
+  margin: 0.6rem;
+  width: 8rem;
+  height: 2rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin: 0.4rem;
+  border: 0.1rem solid #204150;
+  border-radius: 0.5rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  color: #fff;
+  background: linear-gradient(to right, #d0e3ec, #204150);
+}
+.container section .btn-rounded:hover {
+  background: linear-gradient(to right, #d0e3ec, #2f5e74);
+}
+.container section .book {
+  width: 10rem;
+}
+.container section .logout,
+.container section .unsub {
+  align-self: center;
+}
+.container section input {
+  padding: 0.4rem;
+  margin: 1rem;
+  width: auto;
+  height: 2rem;
+  font-weight: 700;
+  margin: 0.4rem;
+  border: 0.1rem solid #343a40;
+  border-radius: 0.5rem;
+  box-shadow: 2px 3px 4px 1px rgba(119, 119, 119, 0.7);
+  -webkit-box-shadow: 2px 3px 4px 1px rgba(119, 119, 119, 0.7);
+  -moz-box-shadow: 2px 3px 4px 1px rgba(119, 119, 119, 0.7);
+  color: #212529;
+  background: linear-gradient(to left, #f8f9fa, #ced4da);
+}
+.container section input:hover {
+  background: linear-gradient(to left, #e9ecef, #adb5bd);
+}
+
+@media screen and (max-width: 760px) {
+  .container,
+section {
+    align-items: center;
+  }
+  .container input,
+.container button,
+.container h1,
+.container h2,
+.container h4,
+section input,
+section button,
+section h1,
+section h2,
+section h4 {
+    align-self: center;
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../img/firebase-logo.png"
+      type="image/x-icon"
+    />
+    <title>Firebase 9</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/858dce91ac.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Firebase 9</h1>
+      <img src="../img/firebase.png" alt="logo" />
+
+      <h4>Open JavaScript Console</h4>
+
+      <section class="firebaseFirestore">
+        <h2>Firebase Firestore CRUD</h2>
+
+        <form class="add">
+          <label for="title">Title:</label>
+          <input type="text" name="title" required />
+          <label for="author">&nbsp; Author:</label>
+          <input type="text" name="author" required />
+
+          <button class="btn-rounded book">
+            add a new book <i class="fas fa-book"></i>
+          </button>
+        </form>
+
+        <form class="delete">
+          <label for="id">Document id:</label>
+          <input type="text" name="id" required />
+
+          <button class="btn-rounded">delete a book</button>
+        </form>
+
+        <form class="update">
+          <label for="id">Document id:</label>
+          <input type="text" name="id" required />
+
+          <button class="btn-rounded">update a book</button>
+        </form>
+      </section>
+
+      <section class="firebaseAuth">
+        <h2>Firebase Auth</h2>
+
+        <form class="signup">
+          <label for="email"><i class="fas fa-paper-plane"></i> email:</label>
+          <input type="email" name="email" />
+          <label for="password"> &nbsp; password:</label>
+          <input type="password" name="password" />
+          <button class="btn-rounded">signup</button>
+        </form>
+
+        <form class="login">
+          <label for="email"><i class="fas fa-paper-plane"></i> email:</label>
+          <input type="email" name="email" />
+          <label for="password"> &nbsp; password:</label>
+          <input type="password" name="password" />
+          <button class="btn-rounded">login</button>
+        </form>
+
+        <button class="logout btn-rounded">logout</button>
+      </section>
+
+      <section class="unsubscribe">
+        <h2>Unsubscribing</h2>
+        <button class="unsub btn-rounded">unsubscribe</button>
+      </section>
+    </main>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
